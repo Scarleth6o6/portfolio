@@ -1,0 +1,394 @@
+.main-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(10, 10, 10, 0.85);
+  box-shadow: 0 0 10px #00ffff;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #0ff;
+  font-family: 'Orbitron', sans-serif;
+  text-shadow: 0 0 5px #0ff;
+}
+.logo img {
+  width: 50px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.nav-links li a:hover {
+  color: #0ff;
+  text-shadow: 0 0 5px #0ff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Fondo y overlay */
+.background {
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.75);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem 1rem;
+}
+
+/* Tipografía y fondo global */
+body {
+  font-family: 'Roboto Mono', monospace;
+  color: white;
+  background: url("./background/background_3.webp") black repeat-y;
+  background-size: contain;
+  margin: 0 auto;
+}
+
+/* Textos generales */
+.about h1,
+.projects,
+.about-links {
+  text-shadow:
+    0 0 5px #b71400,
+    0 0 0px #b71400,
+    0 0 20px #b71400,
+    0 0 40px #b71400;
+  
+}
+
+h2, h3, .about-links{
+  text-shadow:
+    0 0 5px #0ff,
+    0 0 0px #0ff,
+    0 0 20px #0ff,
+    0 0 40px #0ff;
+}
+.about {
+  background-color: rgba(0,0,0, 0.6);
+  color: #fff;
+  font-family: 'Roboto Mono', monospace;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 4rem auto;
+  max-width: 1000px;
+}
+
+.about h1 {
+  color: white;
+  margin: 0.5rem 0;
+  font-family: 'Orbitron', serif;
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.about h3 {
+  margin-bottom: 1.0rem;
+  font-size: 30px;
+  font-family: 'Orbitron', serif;
+}
+
+
+.about p {
+  font-size: 1rem;
+  /*line-height: 1.6;*/
+  max-width: 800px;
+  margin: 0 auto 2rem;
+}
+
+.about-links .btn {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: #000;
+  color: rgb(210, 210, 223);
+  border: 1px solid rgb(38, 167, 184);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s;
+}
+
+.about-links .btn:hover {
+  background: #222;
+  color: #fff;
+}
+
+
+p {
+  font-size: 1.2rem;
+  margin: 0.5rem;
+  text-align: left;
+  position: relative;
+  z-index: 1;
+}
+
+/* Botón */
+.show-more-btn {
+  background-color: #111;
+  color: #0ff;
+  border: 1px solid #0ff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* Proyectos */
+.projects-container {
+  margin-top: 4rem;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 1000px;
+  margin-left: 160px;
+  margin: auto;
+}
+
+.project {
+  background: rgb(43, 24, 67, 0.44);
+  border-radius: 10px;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.project-image {
+  width: 300px;
+  height: 260px;
+  flex: 1;
+  /*background-color: #000;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+  padding-top: 1rem;
+  font-weight: bold;
+}
+
+.project-content {
+  flex: 2;
+  padding: 1.5rem;
+  max-width: 800px;
+  color: #eee;
+}
+
+.project-content h1 {
+  color: #0ff;
+  font-size: 2rem;
+  padding-top: 20px;
+  border-bottom: 2px solid #0ff;
+  border-top: 10px;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.project-content h3 {
+  margin-top: 0;
+}
+
+.project-content p {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+.project-content code {
+  background-color: #222;
+  /*padding: 0.2em 0.4em;*/
+  border-radius: 4px;
+  color: #0ff;
+}
+
+.project-content a.back-link {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #0ff;
+  color: #0ff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+
+.project-content a.back-link:hover {
+  background-color: #0ff;
+  color: #111;
+}
+
+.tech-section {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  margin: 4rem auto;
+  max-width: 1000px;
+}
+
+.tech-section h2 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.section {
+  scroll-margin-top: 80px;
+  /* Ajusta según el alto de tu header */
+}
+
+
+.tech-grid {
+  padding: 10px 180px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.tech-grid img {
+  width: 50px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.tech-grid img:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .project {
+    flex-direction: column;
+  }
+
+  .project-image {
+    min-height: 150px;
+  }
+}
+
+/* Footer*/
+.footer {
+  background-color: rgba(0, 0, 0, 0.7);
+  background-size: 400% 400%;
+  animation: backgroundMove 10s ease infinite;
+  padding: 2rem 1rem;
+  text-align: center;
+  color: #ccc;
+  border-top: 1px solid #0ff;
+  margin-top: 4rem;
+  position: relative;
+}
+
+@keyframes backgroundMove {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.footer-text {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #0ff;
+  text-shadow: 0 0 5px #0ff;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.footer-icons a {
+  color: #0ff;
+  font-size: 1.8rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.footer-icons a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.footer-icons a:hover {
+  color: #fff;
+  transform: scale(1.3);
+}
+
+.footer-icons a:hover::after {
+  opacity: 0.4;
+}
+
+/* Fondo decorativo */
+.neon-graphic {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image:
+    radial-gradient(circle, rgba(0, 255, 255, 0.1) 1px, transparent 1px),
+    radial-gradient(circle, rgba(255, 0, 0, 0.05) 1px, transparent 1px);
+  background-size: 60px 60px;
+  z-index: 0;
+}

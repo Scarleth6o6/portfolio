@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AutoPricer – Used Car Price Predictor</title>
+    <link rel="shortcut icon" href="./images/logo_2.png">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<header class="main-header">
+  <nav class="navbar">
+    <div class="logo">    
+      <img src="./images/logo_2.png" alt="SS" title="SS"></div>
+    <ul class="nav-links">
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#projects">Projects</a></li>
+      <li><a href="index.html#skills">Skills</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<body>
+  <div class="background">
+    <div class="overlay">
+      <main class="project-content">
+        <h1>AutoPricer – Used Car Price Predictor</h1>
+
+        <p><strong>Project Objective:</strong> Build a predictive model to estimate used car prices based on various
+          features, helping users determine fair values and improving pricing transparency in the market.</p>
+
+        <p><strong>Technologies Used:</strong> The project included data preprocessing, exploratory analysis, feature
+          engineering, and training of regression models such as <code>Linear Regression</code>,
+          <code>Decision Tree Regressor</code>, <code>Random Forest Regressor</code>, and <code>LightGBM</code>.
+        </p>
+
+        <p><strong>Techniques Applied:</strong></p>
+        <ul>
+          <li>Transformation of temporal and categorical features.</li>
+          <li>Outlier detection and removal.</li>
+          <li>Model evaluation using <strong>R²</strong>, <strong>MAE</strong>, and <strong>RMSE</strong>.</li>
+          <li>Model comparison and selection based on prediction accuracy and training time.</li>
+        </ul>
+
+        <p><strong>Results:</strong> The <code>Random Forest</code> model achieved the best balance between performance
+          and accuracy with an RMSE of <strong>0.0836</strong>. The <code>LightGBM</code> model was the fastest to train
+          (6.41s), while <code>Linear Regression</code> was the least accurate with an RMSE of <strong>0.1498</strong>.
+        </p>
+
+        <p><strong>Skills Applied:</strong> This project demonstrated proficiency in regression modeling, data
+          visualization, model evaluation, and performance optimization.</p>
+
+        <p><strong>Conclusions:</strong> Key factors in vehicle pricing included brand, model year, transmission type,
+          and fuel type. The resulting model can be used by dealers or individual sellers to suggest competitive and
+          fair market prices.</p>
+
+        <a class="back-link" href="index.html">← Back to Portfolio</a>
+      </main>
+    </div>
+  </div>
+</body>
+<footer class="footer" id="contact">
+  <p class="footer-text">Developed by <strong>Scarleth Molixer</strong> © 2025</p>
+
+  <div class="footer-icons">
+    <a href="https://github.com/Scarleth6o6" target="_blank" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/scarleth-san-martin" target="_blank" aria-label="LinkedIn">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="mailto:smsanmartinlepin@gmail.com" target="_blank" aria-label="Email">
+      <i class="fas fa-envelope"></i>
+    </a>
+  </div>
+</footer>
+
+</html>
