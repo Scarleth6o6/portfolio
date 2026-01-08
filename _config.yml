@@ -1,0 +1,42 @@
+# Configuración básica del sitio
+title: "Scarleth San Martin- Portafolio"
+email: "smsanmartinlepin@gmail.com" # Opcional
+description: "Portafolio y blog técnico." # Opcional
+baseurl: "" # Déjalo vacío si tu sitio está en la raíz del dominio
+url: "https://scarlethsportfolio.netlify.app" # Tu URL en Netlify
+# O usa esta si aún no tienes dominio: url: "https://scarlethsanmartinportfolio.netlify.app"
+
+# Configuración de construcción
+markdown: kramdown
+theme: minima # O el nombre de tu tema si usas uno
+
+# Directorios
+source: ./
+destination: ./_site
+
+# Excluir archivos del procesamiento
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - netlify.toml
+  - README.md
+  - .gitignore
+
+# Plugins (si usas alguno, agrégalo aquí)
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Configuración por defecto para posts
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      comments: true # Si agregas comentarios
